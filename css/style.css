@@ -354,9 +354,52 @@ border-radius: 10px;
 
 
 
+/*----------------------------Novedades----------------*/
+
+.grid-galeria {
+    display: grid;
+    width: 100%;
+    grid-template-columns:   1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "urbano mascota"
+    "deCompras agente" 
+    "sala sala";
+    
+    
+}
+.grid-div {
+
+    width: 100%;
+    height: 100%;
+}
 
 
-
+.sala {
+    display: sala ;
+    width: 100%;
+    height: 100%;
+}
+.urbano{
+    grid-area: urbano;
+    width: 100%;
+    height: 100%;
+}
+.mascota{
+    grid-area: mascota;
+    width: 100%;
+    height: 100%;
+}
+.deCompras{
+    grid-area: deCompras;
+    width: 100%;
+    height: 100%;
+}
+.agente{
+    grid-area: agente;
+    width: 100%;
+    height: 100%;
+}
 
 
 
