@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
 /*!------------------------------RESET----------------------------- cambio en hig des*/
 
 *{
@@ -102,7 +106,7 @@ main iframe {
 }
 .heroStylesContenedor {
 width: 100%;
-height: 25vh;
+
 display: flex;
 align-items: center;
 justify-content:center;
@@ -159,6 +163,7 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
 .heroStyles div img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /*----------------------------Quiero Consultar*----------------*/
@@ -261,8 +266,7 @@ align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    height: 300px;
+    width: 100%;   
     justify-content: center;
     margin-top: 20px;
 }
@@ -354,36 +358,62 @@ border-radius: 10px;
 
 
 
-/*----------------------------Novedades----------------*/
+/*----------------------------SobreNososotros----------------*/
 
 .grid-galeria {
     display: grid;
     width: 100%;
+    height: 70vh;
     border:royalblue solid 1px;
-
     grid-template-columns:   1fr 1fr 1fr 1fr;
-    grid-auto-rows: 380px;
+    grid-template-rows: 40% 30% 30% ;
+    gap: 2px;
     
     
     
 }
 
-.div-texto{
-    max-width: 100%;
-    max-height: 100%;
-    border:red solid 1px;
+.tituloParrafo{
+    position: absolute;
+}
+
+.ParrafosGrid{
+    text-align: center;
+    color: #f0f4f3;
+    font-size: xx-small;
+}
+
+
+.div-tecno{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 4  ;
-
+    
+}
+.tecno{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tituloTecno{
+    font-family: "Press Start 2P";
+    text-align: center;
+    color:#2ec4b6;
+    font-size: medium;
+    text-shadow: 2px 1px 0px black;
 
 }
 
-.div-mascota{   
-    max-width: 100%;
-    max-height: 100%;
-    border:red solid 1px;
+
+.div-mascota{    
+    
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -392,6 +422,9 @@ border-radius: 10px;
 
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 100% 30%;
+
 }
 
 
@@ -399,9 +432,6 @@ border-radius: 10px;
 
 .div-sala {
     
-    width: 100%;
-    height: 100%;
-    border:red solid 1px;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -411,53 +441,73 @@ border-radius: 10px;
     
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 100% 70%;
+
 }
 
 
 
 
 .div-urbano{ 
+    display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
-    border:red solid 1px;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .urbano{ 
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 90% 5%;
 }
+.tituloUrbano{
+    font-family: "Covered By Your Grace";
+    text-align: center;
+    background-color: #26465389;
+    border-radius: 10%;
 
+    font-size: medium;
+    color: lightgrey;
+    text-shadow: 2px 1px 0px black;
+
+
+}
 .div-deCompras{
-    
-    width: 100%;
-    height: 100%;
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 2;
+    grid-row-start: 2; 
 }
 .deCompras{
     
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 100% 15%;
 }
 
 .div-agente{ 
-    width: 100%;
-    height: 100%;
-    border:red solid 1px;
+    
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 1;
-
+    grid-row-start: 1; 
 }
 .agente{ 
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 90% 5%;
     
     }
 
 
-
+.practicaCoder{
+    display: flex;
+}
 
 
 
