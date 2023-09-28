@@ -17,7 +17,7 @@
 
 
 /*!------------------------------HEADER-----------------------------*/
-header{
+/*header{
     background: #0c0f0a;
     display: flex;
     width: 100%;
@@ -92,18 +92,26 @@ header nav ul li a{
     color: #ff595e;
     padding-right: 3px;
     padding-left: 20px;
+}*/
+/*!------------------------------nav bootrap -----------------------------*/
+.logoNav {
+    height: 60px;
+    width: 100%;
 }
 
-
-
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 10px;
+    padding: 0px;
+    height: 100%;
+}
 /*!------------------------------MAIN-----------------------------*/
 
 
 
-main iframe {
-    height: 150px;
-    width: 250px;
-}
+
 .heroStylesContenedor {
 width: 100%;
 
@@ -165,6 +173,11 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
     height: 100%;
     object-fit: cover;
 }
+
+
+
+
+
 
 /*----------------------------Quiero Consultar*----------------*/
 
@@ -381,7 +394,8 @@ border-radius: 10px;
         width: 100%;
         height: 70vh;
         border:rgb(225, 65, 108) solid 1px;
-    
+        grid-template-columns:   1fr;
+        grid-template-rows: 40% 30% 30% ;
         
         gap: 2px;
         
@@ -415,7 +429,8 @@ border-radius: 10px;
     position: relative;
     width: 100%;
     height: 100%;
-    align-items: center;
+    align-items: center;    
+    justify-content: center;
     
     grid-column-start: 1;
     grid-column-end: 1;
@@ -440,8 +455,6 @@ border-radius: 10px;
     }
 
 }
-   
-
 
 
 
@@ -494,7 +507,14 @@ border-radius: 10px;
     grid-column-end: 5;
     grid-row-start: 3;
 }
+@media screen and (max-width:1000px){
 
+    .div-sala {
+    
+    display: none;
+    }
+
+}
 .sala {
     
     width: 100%;
@@ -517,6 +537,24 @@ border-radius: 10px;
     
 
 }
+
+@media screen and (max-width:1000px){
+
+    .div-urbano{ 
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2  ;
+    
+    }
+
+}
 .urbano{ 
     width: 100%;
     height: 100%;
@@ -532,13 +570,40 @@ border-radius: 10px;
     font-size: medium;
     color: lightgrey;
     text-shadow: 2px 1px 0px black;
+}
+@media screen and (max-width:1000px){
 
+    .tituloUrbano{
+        
+
+        font-size:xx-large;
+        color: lightgrey;
+        text-shadow: 2px 1px 0px black;
+    }
 
 }
+
+
+
 .div-deCompras{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2; 
+}
+@media screen and (max-width:1000px){
+
+    .div-deCompras{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3; 
+    }
+
 }
 .deCompras{
     
@@ -546,6 +611,18 @@ border-radius: 10px;
     height: 100%;
     object-fit: cover;
     object-position: 100% 15%;
+}
+
+.tituloCompras{
+    
+    text-align: center;
+    border-radius: 10%;
+
+    font-size: medium;
+    color: rgba(211, 211, 211, 0.692);
+    text-shadow: 2px 1px 0px black;
+
+
 }
 
 .div-agente{ 
