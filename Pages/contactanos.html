@@ -43,49 +43,59 @@
             </div>
         </nav>
 
-</header>
+    </header>
     <main class="mainQuieroConsultar">
 
         <section>
         
             <form class="formularioContacto" action="" method="" enctype="">
-                <div>
+                <div class="encabezadoFormulario">
+                    <div>
                     <select class="tipoClienteConsulta" name="tipoCliente" id="tipoCliente">
                             <option value="">Al por menor</option>
                             <option value="">Al por mayor</option>                       
                     </select>
-                    <div class="sobreQueConsulta">
-                        <label for="sobreProducto">Sobre Producto</label>
-                        <input type="radio" name="tipoconsulta" >
-                        <label for="sobreEnvio">Sobre Envios</label>
-                        <input type="radio" name="tipoconsulta" >
-                        <label for="sobreDevoluciones">Sobre Devolucion</label>
-                        <input type="radio" name="tipoconsulta" >
-                        <label for="sobreOtro">Otro Tema</label>
-                        <input type="radio" name="tipoconsulta" >
                     </div>
+                    
                 </div>
                 
+                <div class="sobreQueConsulta">
+                    <label for="sobreProducto">Sobre Producto</label>
+                    <input type="radio" name="tipoconsulta" >
+                    <label for="sobreEnvio">Sobre Envios</label>
+                    <input type="radio" name="tipoconsulta" >
+                    <label for="sobreDevoluciones">Sobre Devolucion</label>
+                    <input type="radio" name="tipoconsulta" >
+                    <label for="sobreOtro">Otro Tema</label>
+                    <input type="radio" name="tipoconsulta" >
+                </div>
                 
-                
-                <div>
+                <div class="datosPersonales">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" >
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
+                    <input class="inputselda" type="text" name="nombre" id="nombre" >
                 </div>
-                <div>
+                <div class="datosPersonales">
+                    <label for="apellido">Apellido</label>
+                    <input class="inputselda" type="text" name="apellido" id="apellido">
+                </div>
+
+                <div class="datosPersonales">
                     <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="correo" >
+                    <input class="inputselda" type="email" name="correo" id="correo" >  
+                </div> 
+                <div class="datosPersonales">
                     <label for="telefono">telefono</label>
-                    <input type="number" name="telefono" id="telefono" >   
-                </div>                                               
-                <div>
+                    <input class="inputselda" type="number" name="telefono" id="telefono" >   
+                </div> 
+                
+
+                <div class="textolibre">
                     <label for="">Dinos en que podemos ayudarte, te contactaremos lo antes posible</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
-
+                <div>
                 <button>Enviar mi consulta</button>
+                </div>
 
             </form>
         </section>

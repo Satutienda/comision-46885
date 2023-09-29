@@ -94,9 +94,11 @@ header nav ul li a{
     padding-left: 20px;
 }*/
 /*!------------------------------nav bootrap -----------------------------*/
+
 .logoNav {
     height: 60px;
     width: 100%;
+    
 }
 
 header nav ul li a{
@@ -229,10 +231,25 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
     font-size: small;
 }
 
+.encabezadoFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+
 .sobreQueConsulta{
-    height: 30px;
+    height: 20%;
     font-size: xx-small;
-    align-items: center;   
+    align-items: center; 
+    margin: 10px;
 }
 
 .formularioContacto div input{
@@ -249,25 +266,46 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
     
     
 }
+
+@media screen and (max-width:425px){
+
+    .formularioContacto div {
+        display: flex;
+        flex-direction: column;   
+    }
+
+}
+
+
+
+
+
 .tipoClienteConsulta{
     background-color: #0c0f0a;
     border-radius: 5px;
     font-size: xx-small;
     color: #ff595e;
 }
-.formularioContacto div input {
-    width: 70%;
-    height: 90%;
-    
+.inputselda {
+    width: 90%;
+    height: 4vh; 
 }
+
 .formularioContacto div label {
 margin-left: 5px;
-margin-right: 5px;
 font-weight: 100;
 font-size: xx-small;
 align-items: center;
-    
 }
+
+.textolibre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+    
+
 .formularioContacto div textarea{
     background-color: rgba(128, 128, 128, 0.025);
     width: 70%;
@@ -288,9 +326,13 @@ align-items: center;
     color: #ffc300;
     border-radius: 5px;
 }
+@media screen and (max-width:850px){
 
+    .formularioContacto button{
+        align-self: self-start;
+    }
 
-
+}
 
 /*----------------------------Novedades----------------*/
 .tituloNovedadaes{
