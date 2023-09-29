@@ -124,6 +124,14 @@ background-color: #0c0f0a;
 border-top: rgba(220, 220, 220, 0.186) solid 1px;
 
 }
+
+@media screen and (max-width:1145px){
+
+    .heroStylesContenedor {
+        display: none; 
+        }
+}
+
 .heroStylesContenedor div{
     position: relative;
     width: 280px; 
@@ -166,6 +174,7 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
     width: 40vh;
     align-self: flex-start;
     margin-top: 10px;
+    font-size: x-small;
 }
 
 .heroStyles div img {
@@ -175,9 +184,22 @@ border-top: rgba(220, 220, 220, 0.186) solid 1px;
 }
 
 
+.carouselBootrap h6 { 
+    background-color: #0f4d5c;
+    color: white;
+}
+.carouselBootrap h6 a { 
+    color: #ff595e;
+    text-decoration: none;
+}
+@media screen and (min-width:1145px){
 
+    .carouselBootrap {
+    display: none;
+        
+    }
 
-
+}
 
 /*----------------------------Quiero Consultar*----------------*/
 
@@ -344,6 +366,7 @@ border-radius: 10px;
     color: white;
     font-size: small;
     padding: 5px;
+    margin-bottom: 5px;
 
     
 }
@@ -356,6 +379,7 @@ border-radius: 10px;
 .precioAnterior{
     text-decoration:line-through;
     color: #ff595e;
+    font-size: x-small;
 }
 
 .precios{
@@ -363,10 +387,12 @@ border-radius: 10px;
     justify-content: space-around;
     margin-bottom: 15px;
     margin-top: 15px;
+    
 
 }
 .precioActual{
     color: #264653;
+    font-size: small;
 
 }
 
@@ -378,10 +404,10 @@ border-radius: 10px;
     display: grid;
     width: 100%;
     height: 70vh;
-    border:royalblue solid 1px;
     grid-template-columns:   1fr 1fr 1fr 1fr;
     grid-template-rows: 40% 30% 30% ;
     gap: 2px;
+    margin-bottom: 10px;
     
     
     
@@ -393,7 +419,6 @@ border-radius: 10px;
         display: grid;
         width: 100%;
         height: 70vh;
-        border:rgb(225, 65, 108) solid 1px;
         grid-template-columns:   1fr;
         grid-template-rows: 40% 30% 30% ;
         
@@ -652,9 +677,7 @@ border-radius: 10px;
     }
 
 
-.practicaCoder{
-    display: flex;
-}
+
 
 
 
@@ -663,9 +686,7 @@ footer {
     background-color: #0c0f0a;
     display: flex;
     justify-content:space-between ;
-    align-items: center;
-
-    
+    align-items: center; 
 }
 
 .logofoot{
@@ -675,14 +696,17 @@ footer {
     border-radius: 50%;
 
 }
+
+
 .contactoicons img{
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: aliceblue;
 }
-footer p	{
-    color: white;
-    ;
-    font-size: 7px;
+
+
+footer p{
+    color: rgb(251, 250, 250);
+    font-size: 7px;   
 }
